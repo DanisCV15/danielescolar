@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Daniela – desarrolladora de software." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portfolio de Daniela</title>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav__brand">Dani.dev</div>
+    <div class="site-nav__links">
+      <a href="#home" data-section>Inicio</a>
+      <a href="#about" data-section>Sobre mí</a>
+      <a href="#skills" data-section>Habilidades</a>
+      <a href="#projects" data-section>Proyectos</a>
+      <a href="#contact" data-section>Contacto</a>
+    </div>
+    <a class="site-nav__cta" href="mailto:tuemail@example.com">Escríbeme</a>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Desarrolladora de software</p>
+      <h1>Hola, soy Daniela</h1>
+      <p class="hero__lead">Construyo productos digitales limpios, accesibles y centrados en las personas.</p>
+      <div class="hero__actions">
+        <a class="btn btn--accent" href="#projects">Ver proyectos</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+      <ul class="hero__meta">
+        <li><span>+4</span>Años de experiencia</li>
+        <li><span>12</span>Proyectos entregados</li>
+        <li><span>3</span>Comunidades tech</li>
+      </ul>
+    </div>
+    <div class="hero__portrait">
+      <div class="portrait__circle"></div>
+      <img src="https://placehold.co/320x420" alt="Retrato de Daniela" />
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--alt" id="about">
+      <div class="section__header">
+        <p class="eyebrow">Quién soy</p>
+        <h2>Diseño soluciones con detalle y empatía.</h2>
+      </div>
+      <p>Actualmente colaboro con equipos remotos creando aplicaciones que escalan y se mantienen. Me obsesiona la claridad en el código, la accesibilidad y los lanzamientos iterativos.</p>
+      <div class="about__highlights">
+        <article>
+          <h3>Frontend</h3>
+          <p>React, Next.js, TypeScript, Storybook, testing orientado a componentes y CI/CD.</p>
+        </article>
+        <article>
+          <h3>Backend</h3>
+          <p>APIs REST, Node.js, FastAPI, bases de datos relacionales y no relacionales.</p>
+        </article>
+        <article>
+          <h3>Experiencia</h3>
+          <p>Mentoría a equipos junior, workshops de diseño de sistemas y charlas en comunidades.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section__header">
+        <p class="eyebrow">Habilidades</p>
+        <h2>Stack favorito</h2>
+      </div>
+      <div class="skills-grid">
+        <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span>
+        <span>Node.js</span><span>Python</span><span>Tailwind</span><span>Figma</span>
+        <span>Git/GitHub</span><span>Testing Library</span><span>Vercel</span><span>Docker</span>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="section__header">
+        <p class="eyebrow">Proyectos</p>
+        <h2>Algunos trabajos recientes</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <p class="project-card__label">2024 · Producto SaaS</p>
+          <h3>Panel de métricas en tiempo real</h3>
+          <p>Dashboard modular con autenticación, WebSockets y modo oscuro, optimizado con Next.js y Supabase.</p>
+          <ul>
+            <li>Next.js</li><li>Supabase</li><li>Chart.js</li>
+          </ul>
+          <div class="project-card__actions">
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a href="#" target="_blank" rel="noreferrer">Código</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <p class="project-card__label">2023 · ONG</p>
+          <h3>Plataforma de voluntariado</h3>
+          <p>Landing responsiva con gestor de historias y CMS headless para equipos sin perfil técnico.</p>
+          <ul>
+            <li>Astro</li><li>Tailwind</li><li>Contentful</li>
+          </ul>
+          <div class="project-card__actions">
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a href="#" target="_blank" rel="noreferrer">Código</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <p class="project-card__label">2022 · Hackathon</p>
+          <h3>App de hábitos saludables</h3>
+          <p>Aplicación móvil-first con recordatorios inteligentes y estadísticas semanales.</p>
+          <ul>
+            <li>React Native</li><li>Expo</li><li>Firebase</li>
+          </ul>
+          <div class="project-card__actions">
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a href="#" target="_blank" rel="noreferrer">Código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section__header">
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Colaboramos?</h2>
+      </div>
+      <div class="contact-card">
+        <p>Escríbeme para hablar de proyectos freelance, colaboraciones o charlas.</p>
+        <div class="contact-card__actions">
+          <a class="btn btn--accent" href="mailto:tuemail@example.com">Enviar email</a>
+          <a class="btn btn--ghost" href="https://cal.com/" target="_blank" rel="noreferrer">Reservar llamada</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://twitter.com/" target="_blank" rel="noreferrer">Twitter</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Daniela. Construido con cariño en la web abierta.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
